@@ -21,11 +21,11 @@ export default function Home() {
           <Image src={bg} alt='background' width={0} height={0} className='hidden lg:block w-full lg:w-screen h-screen' />
           <Image src={bg2} alt='background' width={0} height={0} className='block lg:hidden w-screen h-screen' />
         </div>
-        <div className="h-screen w-screen container mx-auto pt-36 px-8 text-white">
+        <div className="h-screen w-screen container mx-auto pt-28 lg:pt-36 px-8 text-white">
           <div className="wrapper w-max h-max mx-auto py-1 md:py-3 border-b border-t">
             <p id='sans' className='text-[26px] md:text-[40px] lg:text-[48px]'>Another Fresh</p>
           </div>
-          <div className="wrapper relative w-max h-max mx-auto my-20">
+          <div className="wrapper relative w-max h-max mx-auto my-5 lg:my-20">
             <Image src={bowl} alt='logo' width={0} height={0} className='w-[200px] md:[300px] lg:w-[320px] mx-auto' />
             <Image src={logo} alt='logo' width={0} height={0} className='w-[200px] md:w-[300px] lg:w-[400px] mx-auto lg:-mt-10' />
           </div>
