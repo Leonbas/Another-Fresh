@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="bg-black h-[100px] w-screen opacity-40 absolute top-0 left-0 -z-10"></div>
         <div className="container mx-auto flex my-auto px-8">
             <div className="w-full lg:w-1/2">
-                <Image src={logo} alt='logo' width={0} height={0} className='mx-auto lg:mx-0 w-7/12' />
+                <Image src={logo} alt='logo' width={0} height={0} className='mx-auto lg:mx-0 w-8/12 lg:w-7/12' />
             </div>
             <div className="w-1/2 text-white hidden lg:flex">
                 <button onClick={()=>router.push('/')} className='text-xl h-max my-auto mr-auto transition-all duration-500 hover:scale-110'>Beranda</button>

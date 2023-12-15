@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import bg from '../assets/bgrd.jpg'
 import bg2 from '../assets/bg2.jpg'
@@ -12,10 +12,12 @@ import Image from 'next/image'
 import CardListBuah from '../components/CardListBuah'
 import Footer from '../components/Footer'
 import { useRouter } from 'next/navigation'
+import Loading from '../components/Loading'
 
 const Page = () => {
 
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true)
 
   return (
     <div>
@@ -27,18 +29,18 @@ const Page = () => {
             <Image src={bg2} alt='background' width={0} height={0} className='block lg:hidden w-screen h-screen' />
           </div>
         </div>
-        <div className="wrapper relative w-max h-max mx-auto pt-40 2xl:pt-48">
+        <div className="rspn1 relative w-max h-max mx-auto">
             <Image src={bowl} alt='logo' width={0} height={0} className='w-[200px] md:[300px] xl:w-[320px] mx-auto' />
             <Image src={logo} alt='logo' width={0} height={0} className='w-[200px] md:w-[300px] xl:w-[400px] mx-auto xl:-mt-10' />
         </div>
-        <div className="h-full w-screen container mx-auto px-8 my-32 xl:mt-40 text-white">
+        <div className="rspn2 h-full w-screen container mx-auto px-8 xl:mt-[150px] text-white">
           <p id='sans' className='text-center mb-10 text-[26px] md:text-[40px] lg:text-[48px] font-semibold border-b border-t border-black text-black'>Produk kami</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 my-5 gap-10">
             <CardListBuah gambar={buah1} nama='Anggur Merah' harga1='14.000' harga2='23.000' onclick={()=>router.push('/checkout/1')} />
             <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' onclick={()=>router.push('/checkout/2')} />
             <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' />
-            <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' />
+            <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' onclick={()=>router.push('/checkout/2')} />
+            <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' onclick={()=>router.push('/checkout/3')} />
           </div>
         </div>
         <Footer />

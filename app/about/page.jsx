@@ -22,11 +22,11 @@ const Page = () => {
                     <Image src={bg2} alt='background' width={0} height={0} className='block lg:hidden w-screen h-screen' />
                 </div>
             </div>
-            <div className="wrapper relative w-max h-max mx-auto pt-40 2xl:pt-48">
+            <div className="rspn1 relative w-max h-max mx-auto">
                 <Image src={bowl} alt='logo' width={0} height={0} className='w-[200px] md:[300px] xl:w-[320px] mx-auto' />
                 <Image src={logo} alt='logo' width={0} height={0} className='w-[200px] md:w-[300px] xl:w-[400px] mx-auto xl:-mt-10' />
             </div>
-            <div className="h-full w-screen container mx-auto px-8 my-32 xl:mt-40" id='sans'>
+            <div className="rspn2 h-full w-screen container mx-auto px-8 xl:mt-[150px] mb-20" id='sans'>
                 <p className='text-center text-[26px] md:text-[40px] lg:text-[48px] font-semibold border-b border-t border-black'>Tentang Another Fresh</p>
                 <Image src={img1} width={0} height={0} alt='img' className='my-10 rounded-xl lg:w-3/4 xl:w-7/12 mx-auto' />
                 <div className="desc text-center text-xl lg:text-2xl xl:text-3xl">

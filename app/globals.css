@@ -19,3 +19,31 @@
   #hw{
     font-family: 'hw', sans-serif;
   }
+
+  @media (max-height: 768px) {
+    .rspn1{
+      margin-top: 160px;
+    }
+    .rspn2{
+      margin-top: 128px;
+      margin-bottom: 128px;
+    }
+  }
+
+  @media (min-height: 768px) {
+    .rspn1{
+      margin-top: 195px;
+    }
+    .rspn2{
+      margin-top: 240px;
+    }
+  }
+
+  @media (min-height: 925px) {
+    .rspn1{
+      margin-top: 225px;
+    }
+    .rspn2{
+      margin-top: 270px;
+    }
+  }
