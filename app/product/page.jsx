@@ -39,8 +39,6 @@ const Page = () => {
             <CardListBuah gambar={buah1} nama='Anggur Merah' harga1='14.000' harga2='23.000' onclick={()=>router.push('/checkout/1')} />
             <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' onclick={()=>router.push('/checkout/2')} />
             <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' onclick={()=>router.push('/checkout/2')} />
-            <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' onclick={()=>router.push('/checkout/3')} />
           </div>
         </div>
         <Footer />
