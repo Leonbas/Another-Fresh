@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 
-const CardListBuah = ({ gambar, nama, harga1, harga2, onclick }) => {
+const CardListBuah = ({ gambar, nama, harga1, harga2, satuan1, satuan2, onclick }) => {
   return (
     <div className='shadow-2xl rounded-xl bg-white overflow-hidden w-8/12 sm:w-1/2 md:w-10/12 lg:w-full mx-auto' id='sans'>
       <div className="bg-[#17f030bf] py-1">
         <p className='text-2xl font-semibold text-center'>{nama}</p>
       </div>
-        <div className="wrapper h-[170px] xl:h-[200px]">
-            <Image src={gambar} width={0} height={0} alt='buah' className='h-full w-7/12 md:w-5/12 xl:w-1/2 mx-auto' />
+        <div className="wrapper">
+            <Image src={gambar} width={0} height={0} alt='buah' className='h-full w-7/12 md:w-5/12 xl:w-3/4 mx-auto' />
         </div>
-        <p className='text-md md:text-lg font-medium mt-5 text-center text-black'>Rp.{harga1} / ¼kg.</p>
-        <p className='text-md md:text-lg font-medium text-center text-black'>Rp.{harga2} / ½kg.</p>
+        <p className='text-md md:text-lg font-medium mt-5 text-center text-black'>Rp.{harga1} / {satuan1}kg.</p>
+        <p className='text-md md:text-lg font-medium text-center text-black'>Rp.{harga2} / {satuan2}kg.</p>
         <div className='my-5 flex cursor-pointer bg-[#17f030bf] w-1/2 mx-auto text-xl xl:text-2xl rounded-full py-1 transition-all duration-700 hover:scale-110 hover:text-black'>
           <button onClick={onclick} className="flex w-max mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-cart4 mr-1" viewBox="0 0 16 16">

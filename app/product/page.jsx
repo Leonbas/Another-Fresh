@@ -5,9 +5,16 @@ import bg from '../assets/bgrd.jpg'
 import bg2 from '../assets/bg2.jpg'
 import bowl from '../assets/bowl logo.png'
 import logo from '../assets/logo white.png'
-import buah1 from '../assets/anggur merah.jpeg'
-import buah2 from '../assets/anggur hijau.jpeg'
-import buah3 from '../assets/anggur hitam.jpeg'
+import anggurmerah from '../assets/anggurmerah.jpg'
+import anggurhijau from '../assets/anggurhijau.jpg'
+import anggurhitam from '../assets/anggurhitam.jpg'
+import applefuji from '../assets/applefuji.jpg'
+import appleusa from '../assets/appleusa.jpg'
+import banana from '../assets/banana.jpg'
+import mango from '../assets/mango.jpg'
+import melon from '../assets/melon.jpg'
+import sunkistorange from '../assets/sunkist orange.jpg'
+import watermelon from '../assets/watermelon.jpg'
 import Image from 'next/image'
 import CardListBuah from '../components/CardListBuah'
 import Footer from '../components/Footer'
@@ -35,10 +42,17 @@ const Page = () => {
         </div>
         <div className="rspn2 h-full w-screen container mx-auto px-8 xl:mt-[150px] text-white">
           <p id='sans' className='text-center mb-10 text-[26px] md:text-[40px] lg:text-[48px] font-semibold border-b border-t border-black text-black'>Produk kami</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 my-5 gap-10">
-            <CardListBuah gambar={buah1} nama='Anggur Merah' harga1='14.000' harga2='23.000' onclick={()=>router.push('/checkout/1')} />
-            <CardListBuah gambar={buah2} nama='Anggur Hijau' harga1='19.000' harga2='39.000' onclick={()=>router.push('/checkout/2')} />
-            <CardListBuah gambar={buah3} nama='Anggur Hitam' harga1='16.000' harga2='26.000' onclick={()=>router.push('/checkout/3')} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mt-5 mb-20 gap-10">
+            <CardListBuah gambar={anggurmerah} nama='Anggur Merah' harga1='14.000' harga2='23.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/1')} />
+            <CardListBuah gambar={anggurhijau} nama='Anggur Hijau' harga1='19.000' harga2='39.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/2')} />
+            <CardListBuah gambar={anggurhitam} nama='Anggur Hitam' harga1='16.000' harga2='26.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={applefuji} nama='Apel Fuji' harga1='25.000' harga2='47.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={appleusa} nama='Apel USA' harga1='23.000' harga2='43.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={banana} nama='Pisang' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={mango} nama='Mangga harumanis' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={melon} nama='Melon' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={sunkistorange} nama='Jeruk Sunkist' harga1='19.000' harga2='33.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={watermelon} nama='Semangka' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
           </div>
         </div>
         <Footer />
