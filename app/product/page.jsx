@@ -46,13 +46,13 @@ const Page = () => {
             <CardListBuah gambar={anggurmerah} nama='Anggur Merah' harga1='14.000' harga2='23.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/1')} />
             <CardListBuah gambar={anggurhijau} nama='Anggur Hijau' harga1='19.000' harga2='39.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/2')} />
             <CardListBuah gambar={anggurhitam} nama='Anggur Hitam' harga1='16.000' harga2='26.000' satuan1='¼' satuan2='½' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={applefuji} nama='Apel Fuji' harga1='25.000' harga2='47.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={appleusa} nama='Apel USA' harga1='23.000' harga2='43.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={banana} nama='Pisang' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={mango} nama='Mangga harumanis' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={melon} nama='Melon' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={sunkistorange} nama='Jeruk Sunkist' harga1='19.000' harga2='33.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
-            <CardListBuah gambar={watermelon} nama='Semangka' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/3')} />
+            <CardListBuah gambar={applefuji} nama='Apel Fuji' harga1='25.000' harga2='47.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/4')} />
+            <CardListBuah gambar={appleusa} nama='Apel USA' harga1='23.000' harga2='43.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/5')} />
+            <CardListBuah gambar={banana} nama='Pisang' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/6')} />
+            <CardListBuah gambar={mango} nama='Mangga harumanis' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/7')} />
+            <CardListBuah gambar={melon} nama='Melon' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/8')} />
+            <CardListBuah gambar={sunkistorange} nama='Jeruk Sunkist' harga1='19.000' harga2='33.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/9')} />
+            <CardListBuah gambar={watermelon} nama='Semangka' harga1='7.000' harga2='12.000' satuan1='½' satuan2='1' onclick={()=>router.push('/checkout/10')} />
           </div>
         </div>
         <Footer />

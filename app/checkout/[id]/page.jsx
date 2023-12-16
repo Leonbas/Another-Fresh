@@ -26,32 +26,48 @@ const Page = () => {
     nama: '',
     telepon: '',
     alamat: '',
-    buah: id === '1' ? 'Anggur Red Globe' : id === '2' ? 'Anggur Hijau' : 'Anggur Hitam',
+    buah: id === '1' ? 'Anggur Red Globe' : id === '2' ? 'Anggur Hijau' : id === '3' ? 'Anggur Hitam' : id === '4' ? 'Apel Fuji' : id === '5' ? 'Apel USA' : id === '6' ? 'Pisang' : id === '7' ? 'Mangga' : id === '8' ? 'Melon' : id === '9' ? 'Jeruk Sunkist' : 'Semangka',
     qty: '',
     id_pembelian: idUnik
   })
 
   useEffect(()=>{
-    if (data.buah === '1' && data.qty === '0.25') {
-    setHarga(13500)
-    } else if (data.buah === '1' && data.qty === '0.50'){
-    setHarga(24500)
-    } else if (data.buah === '2' && data.qty === '0.25'){
-    setHarga(19000)
-    } else if (data.buah === '2' && data.qty === '0.50'){
-    setHarga(36000)
-    } else if (data.buah === '3' && data.qty === '0.25'){
-    setHarga(14000)
-    } else if (data.buah === '3' && data.qty === '0.50'){
-    setHarga(26000)
-    } else if (data.buah === '1'){
-    setHarga(42.000 * data.qty)
-    } else if (data.buah === '2'){
-    setHarga(72000 * data.qty)
+    if (id === '1' && data.qty === '0.25') {
+      setHarga(13500)
+    } else if (id === '1' && data.qty === '0.50'){
+      setHarga(24500)
+    } else if (id === '2' && data.qty === '0.25'){
+      setHarga(19000)
+    } else if (id === '2' && data.qty === '0.50'){
+      setHarga(36000)
+    } else if (id === '3' && data.qty === '0.25'){
+      setHarga(14000)
+    } else if (id === '3' && data.qty === '0.50'){
+      setHarga(26000)
+    } else if (id === '6' | '7' | '8' | '10' && data.qty === '0.50'){
+      setHarga(7000)
+    } else if (id === '4' && data.qty === '0.50'){
+      setHarga(25000)
+    } else if (id === '5' && data.qty === '0.50'){
+      setHarga(23000)
+    } else if (id === '9' && data.qty === '0.50'){
+      setHarga(19000)
+    } else if (id === '1'){
+      setHarga(42000 * data.qty)
+    } else if (id === '2'){
+      setHarga(72000 * data.qty)
+    } else if (id === '3'){
+      setHarga(43000 * data.qty)
+    } else if (id === '4'){
+      setHarga(47000 * data.qty)
+    } else if (id === '5'){
+      setHarga(43000 * data.qty)
+    } else if (id === '6' | '7' | '8' | '10'){
+      setHarga(12000 * data.qty)
     } else {
-    setHarga(43000 * data.qty)
+      setHarga(19000 * data.qty)
     }
-}, [data.qty, data.buah])
+}, [data.qty, id])
 
   const handleChange = (e) => {
     setData({
@@ -111,7 +127,7 @@ const handleCheckout = (e) => {
             <Image src={bowl} alt='logo' width={0} height={0} className='w-[200px] md:[300px] xl:w-[320px] mx-auto' />
             <Image src={logo} alt='logo' width={0} height={0} className='w-[200px] md:w-[300px] xl:w-[400px] mx-auto xl:-mt-10' />
         </div>
-        <div className="rspn2 h-full w-screen container mx-auto px-8 xl:mt-[150px]" id='sans'>
+        <div className="rspn2 h-full w-screen container mx-auto px-8 xl:mt-[150px] mb-20" id='sans'>
           <p className='text-center text-[26px] md:text-[40px] lg:text-[48px] font-semibold'>Silahkan isi form di bawah untuk melakukan pembelian:</p>
           <div className="form p-5 my-5 border-2 rounded-xl md:w-3/4 lg:w-1/2 md:mx-auto">
             <div className="wrapper space-y-3 md:space-y-6 text-xl sm:text-[24px]">
@@ -137,6 +153,8 @@ const handleCheckout = (e) => {
                 <div className="wrapperinp w-1/4">
                   <p className='xl:mb-2'>Jumlah</p>
                   <select type="text" name='qty' onChange={handleChange} value={data.qty} className='px-3 py-1 border rounded w-full outline-none cursor-pointer'>
+                    <option value="0.25">¼</option>
+                    <option value="0.50">½</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
